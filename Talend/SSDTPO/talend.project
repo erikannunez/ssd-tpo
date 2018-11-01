@@ -147,6 +147,39 @@
       <relatedItems xmi:id="_cdTBFt0vEeiefZqQPhWpSA" id="_H3wO8Ny3EeiXsY9Gt9aTXA - CLIENTES" version="Latest" type="schema"/>
       <relatedItems xmi:id="_cdTBF90vEeiefZqQPhWpSA" id="_rOiLwNy2EeiXsY9Gt9aTXA - dim_cargo" version="Latest" type="schema"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_J2jDMN1BEeiYq4gwy6n9FQ">
+      <baseItem xmi:id="_J2jDMd1BEeiYq4gwy6n9FQ" id="_Wq8qIN0-EeiYq4gwy6n9FQ" version="0.1" type="job"/>
+      <relatedItems xmi:id="_J2jDMt1BEeiYq4gwy6n9FQ" id="_H3wO8Ny3EeiXsY9Gt9aTXA" version="Latest" type="property"/>
+      <relatedItems xmi:id="_J2jDM91BEeiYq4gwy6n9FQ" id="_rOiLwNy2EeiXsY9Gt9aTXA" version="Latest" type="property"/>
+      <relatedItems xmi:id="_J2jDNN1BEeiYq4gwy6n9FQ" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_J2jDNd1BEeiYq4gwy6n9FQ" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_J2jDNt1BEeiYq4gwy6n9FQ" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_J2jDN91BEeiYq4gwy6n9FQ" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_J2jDON1BEeiYq4gwy6n9FQ" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_J2jDOd1BEeiYq4gwy6n9FQ" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_J2jqQN1BEeiYq4gwy6n9FQ" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_J2jqQd1BEeiYq4gwy6n9FQ" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_J2jqQt1BEeiYq4gwy6n9FQ" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_J2jqQ91BEeiYq4gwy6n9FQ" id="_rOiLwNy2EeiXsY9Gt9aTXA - dim_cliente" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_J2jqRd1BEeiYq4gwy6n9FQ" id="_rOiLwNy2EeiXsY9Gt9aTXA - dim_companiaEnvios" version="Latest" type="schema"/>
+    </ItemsRelations>
+    <ItemsRelations xmi:id="_ZYAsUN1JEeiYq4gwy6n9FQ">
+      <baseItem xmi:id="_ZYAsUd1JEeiYq4gwy6n9FQ" id="_V0O5AN1IEeiYq4gwy6n9FQ" version="0.1" type="job"/>
+      <relatedItems xmi:id="_ZYAsUt1JEeiYq4gwy6n9FQ" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_ZYAsU91JEeiYq4gwy6n9FQ" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_ZYAsVN1JEeiYq4gwy6n9FQ" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_ZYAsVd1JEeiYq4gwy6n9FQ" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_ZYAsVt1JEeiYq4gwy6n9FQ" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_ZYAsV91JEeiYq4gwy6n9FQ" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_ZYAsWN1JEeiYq4gwy6n9FQ" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_ZYAsWd1JEeiYq4gwy6n9FQ" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_ZYAsWt1JEeiYq4gwy6n9FQ" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_ODJ2cN1VEeiE1bv90RljwQ" id="_fWY9AN1OEeiE1bv90RljwQ" version="Latest" type="property"/>
+      <relatedItems xmi:id="_ODJ2cd1VEeiE1bv90RljwQ" id="_rOiLwNy2EeiXsY9Gt9aTXA" version="Latest" type="property"/>
+      <relatedItems xmi:id="_ODJ2ct1VEeiE1bv90RljwQ" id="_fWY9AN1OEeiE1bv90RljwQ - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_ODJ2c91VEeiE1bv90RljwQ" id="_rOiLwNy2EeiXsY9Gt9aTXA - dim_pais" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_ODJ2dN1VEeiE1bv90RljwQ" id="_rOiLwNy2EeiXsY9Gt9aTXA - dim_categoria" version="Latest" type="schema"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_DYSlkNytEeiSF_t8clgCOA" id="org.talend.designer.maven.ui.ConfigMavenRepositoryRemove" breaks="6.0.1" version="6.0.2" status="ok"/>
     <migrationTask xmi:id="_DYSlkdytEeiSF_t8clgCOA" id="org.talend.designer.core.generic.model.migration.ChangeDriverJarForProjectSetting" breaks="7.0.1" version="7.0.1" status="ok"/>
     <migrationTask xmi:id="_DYSlktytEeiSF_t8clgCOA" id="org.talend.designer.core.ui.preferences.migration.ChangeMysqlVersionForProjectSetting" breaks="5.2.0" version="5.1.3" status="ok"/>

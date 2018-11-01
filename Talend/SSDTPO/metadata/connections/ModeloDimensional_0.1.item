@@ -51,10 +51,10 @@
         <initialValue xsi:type="relational:TdExpression" xmi:id="__fpcTNz9EeiuWdo4QjdXfQ" language="COLUMN_DEF"/>
         <sqlDataType xmi:id="__fpcTdz9EeiuWdo4QjdXfQ" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
       </feature>
-      <feature xsi:type="relational:TdColumn" xmi:id="__fpcTtz9EeiuWdo4QjdXfQ" name="id_mes" label="id_mes" length="10" sourceType="INT" talendType="id_Integer" nullable="false">
-        <taggedValue xmi:id="__fpcT9z9EeiuWdo4QjdXfQ" tag="Comment" value=""/>
-        <initialValue xsi:type="relational:TdExpression" xmi:id="__fpcUNz9EeiuWdo4QjdXfQ" language="COLUMN_DEF"/>
-        <sqlDataType xmi:id="__fpcUdz9EeiuWdo4QjdXfQ" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+      <feature xsi:type="relational:TdColumn" xmi:id="_6clHPN1OEeiE1bv90RljwQ" name="id_tiempo" label="id_tiempo" length="10" sourceType="INT" talendType="id_Integer" nullable="false">
+        <taggedValue xmi:id="_6clHPd1OEeiE1bv90RljwQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_6clHPt1OEeiE1bv90RljwQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_6clHP91OEeiE1bv90RljwQ" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
       </feature>
       <feature xsi:type="relational:TdColumn" xmi:id="__fpcUtz9EeiuWdo4QjdXfQ" name="importe" label="importe" length="10" sourceType="INT" talendType="id_Integer">
         <taggedValue xmi:id="__fpcU9z9EeiuWdo4QjdXfQ" tag="Comment" value=""/>
@@ -376,10 +376,10 @@
         <initialValue xsi:type="relational:TdExpression" xmi:id="__gIkkNz9EeiuWdo4QjdXfQ" language="COLUMN_DEF"/>
         <sqlDataType xmi:id="__gIkkdz9EeiuWdo4QjdXfQ" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
       </feature>
-      <feature xsi:type="relational:TdColumn" xmi:id="__gIkktz9EeiuWdo4QjdXfQ" name="codigo_venta" label="codigo_venta" length="64" sourceType="VARCHAR" talendType="id_String">
+      <feature xsi:type="relational:TdColumn" xmi:id="__gIkktz9EeiuWdo4QjdXfQ" name="codigo_venta" label="codigo_venta" length="10" sourceType="INT" talendType="id_Integer">
         <taggedValue xmi:id="__gIkk9z9EeiuWdo4QjdXfQ" tag="Comment" value=""/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="__gIklNz9EeiuWdo4QjdXfQ" language="COLUMN_DEF"/>
-        <sqlDataType xmi:id="__gIkldz9EeiuWdo4QjdXfQ" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+        <sqlDataType xmi:id="__gIkldz9EeiuWdo4QjdXfQ" name="INT" numericPrecisionRadix="10" javaDataType="4" nullable="columnNullable"/>
       </feature>
       <feature xsi:type="relational:TdColumn" xmi:id="__gIkltz9EeiuWdo4QjdXfQ" name="cargo_envio" label="cargo_envio" length="22" sourceType="DOUBLE" talendType="id_Double">
         <taggedValue xmi:id="__gIkl9z9EeiuWdo4QjdXfQ" tag="Comment" value=""/>
@@ -400,6 +400,16 @@
         <taggedValue xmi:id="__gIko9z9EeiuWdo4QjdXfQ" tag="Comment" value=""/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="__gIkpNz9EeiuWdo4QjdXfQ" language="COLUMN_DEF"/>
         <sqlDataType xmi:id="__gIkpdz9EeiuWdo4QjdXfQ" name="DOUBLE" numericPrecisionRadix="10" javaDataType="8" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_6rrRVN1kEeiE1bv90RljwQ" name="subtotal_venta" label="subtotal_venta" length="22" sourceType="DOUBLE" talendType="id_Double">
+        <taggedValue xmi:id="_6rrRVd1kEeiE1bv90RljwQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_6rrRVt1kEeiE1bv90RljwQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_6rrRV91kEeiE1bv90RljwQ" name="DOUBLE" numericPrecisionRadix="10" javaDataType="8" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_RST8RN0_EeiYq4gwy6n9FQ" name="total_venta" comment="Es el total de la venta con el descuento realizado" label="total_venta" length="22" sourceType="DOUBLE" talendType="id_Double">
+        <taggedValue xmi:id="_RST8Rd0_EeiYq4gwy6n9FQ" tag="Comment" value="Es el total de la venta con el descuento realizado"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_RST8Rt0_EeiYq4gwy6n9FQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_RST8R90_EeiYq4gwy6n9FQ" name="DOUBLE" numericPrecisionRadix="10" javaDataType="8" nullable="columnNullable"/>
       </feature>
     </ownedElement>
     <ownedElement xsi:type="relational:TdTable" xmi:id="__gZqMdz9EeiuWdo4QjdXfQ" name="dim_companiaEnvios" id="__gZqMNz9EeiuWdo4QjdXfQ" label="dim_companiaEnvios" tableType="TABLE">

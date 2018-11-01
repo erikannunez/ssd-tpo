@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_fWiG8N1OEeiE1bv90RljwQ" name="PresupuestosDeVentas" dataPackage="_fWiG8d1OEeiE1bv90RljwQ" Server="Localhost 127.0.0.1" FilePath="/Users/erikannunez/Documents/GitHub/ssd-tpo/Datos/Presupuestos.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="1997" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" selectAllSheets="true" sheetList="1997:w&#xA;1998:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_fWiG8d1OEeiE1bv90RljwQ" name="default" dataManager="_fWiG8N1OEeiE1bv90RljwQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_fWiG8t1OEeiE1bv90RljwQ" id="_SzI30N1OEeiE1bv90RljwQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fWiG891OEeiE1bv90RljwQ" label="Fecha" length="28" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fWiG9N1OEeiE1bv90RljwQ" label="Pais" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fWiG9d1OEeiE1bv90RljwQ" label="Categoria" length="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fWiG9t1OEeiE1bv90RljwQ" label="Total" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

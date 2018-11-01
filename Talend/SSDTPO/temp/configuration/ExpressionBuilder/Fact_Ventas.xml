@@ -1,0 +1,70 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_1=>" expression="(row2.PRECIOUNIDAD * row2.CANTIDAD) * (1 - row2.DESCUENTO)">
+  <variables name="row1.IDPEDIDO" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row1.IDCLIENTE" value="null" talendType="id_String"/>
+  <variables name="row1.IDEMPLEADO" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row1.FECHAPEDIDO" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row1.FECHAENTREGA" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row1.FECHAENVIO" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row1.FORMAENVIO" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row1.CARGO" value="null" talendType="id_Double" nullable="true"/>
+  <variables name="row1.DESTINATARIO" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.DIRECCIONDESTINATARIO" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.CIUDADDESTINATARIO" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.REGIONDESTINATARIO" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.CODPOSTALDESTINATARIO" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.PAISDESTINATARIO" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row2.IDPEDIDO" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row2.IDPRODUCTO" value="0" talendType="id_Integer"/>
+  <variables name="row2.PRECIOUNIDAD" value="0" talendType="id_Double"/>
+  <variables name="row2.CANTIDAD" value="0" talendType="id_Integer"/>
+  <variables name="row2.DESCUENTO" value="0" talendType="id_Double"/>
+  <variables name="row3.id_producto" value="0" talendType="id_Integer"/>
+  <variables name="row3.id_proveedor" value="0" talendType="id_Integer"/>
+  <variables name="row3.id_categoria" value="0" talendType="id_Integer"/>
+  <variables name="row3.codigo_producto" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row3.nombre_producto" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row3.cantidad_por_unidad" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row3.precio_por_unidad" value="null" talendType="id_Double" nullable="true"/>
+  <variables name="row4.id_compania_envios" value="0" talendType="id_Integer"/>
+  <variables name="row4.nombre_compania_envios" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row4.telefono" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row5.id_empleado" value="0" talendType="id_Integer"/>
+  <variables name="row5.id_cargo" value="0" talendType="id_Integer"/>
+  <variables name="row5.id_tratamiento" value="0" talendType="id_Integer"/>
+  <variables name="row5.id_ciudad" value="0" talendType="id_Integer"/>
+  <variables name="row5.codigo_empleado" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row5.apellido" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row5.nombre" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row5.fecha_nacimiento" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row5.fecha_contratacion" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row5.direccion" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row5.codigo_postal" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row5.telefono_domicilio" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row5.extension" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row5.foto" value="null" talendType="id_Object" nullable="true"/>
+  <variables name="row5.nota" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row5.jefe" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row6.id_cliente" value="0" talendType="id_Integer"/>
+  <variables name="row6.id_ciudad_cliente" value="0" talendType="id_Integer"/>
+  <variables name="row6.codigo_cliente" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row6.nombre_cliente" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row6.nombre_contacto" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row6.cargo_contacto" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row6.telefono" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row6.fax" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row6.direccion" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row6.codigo_postal" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row7.id_tiempo" value="0" talendType="id_Integer"/>
+  <variables name="row7.id_dia" value="0" talendType="id_Integer"/>
+  <variables name="row7.fecha" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row7.dow" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.id_tiempo" value="0" talendType="id_Integer"/>
+  <variables name="row8.id_dia" value="0" talendType="id_Integer"/>
+  <variables name="row8.fecha" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row8.dow" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row9.id_tiempo" value="0" talendType="id_Integer"/>
+  <variables name="row9.id_dia" value="0" talendType="id_Integer"/>
+  <variables name="row9.fecha" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row9.dow" value="null" talendType="id_String" nullable="true"/>
+</expression:EMFExpression>
