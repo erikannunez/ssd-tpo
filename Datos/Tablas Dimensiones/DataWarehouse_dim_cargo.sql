@@ -1,8 +1,8 @@
 -- MySQL dump 10.13  Distrib 5.7.17, for macos10.12 (x86_64)
 --
--- Host: localhost    Database: DataWarehouse
+-- Host: ssddb.ck6ywww2iqip.sa-east-1.rds.amazonaws.com    Database: DataWarehouse
 -- ------------------------------------------------------
--- Server version	8.0.13
+-- Server version	5.7.23-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -14,31 +14,25 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+SET @MYSQLDUMP_TEMP_LOG_BIN = @@SESSION.SQL_LOG_BIN;
+SET @@SESSION.SQL_LOG_BIN= 0;
 
 --
--- Table structure for table `dim_companiaEnvios`
+-- GTID state at the beginning of the backup 
 --
 
-DROP TABLE IF EXISTS `dim_companiaEnvios`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `dim_companiaEnvios` (
-  `id_compania_envios` int(11) NOT NULL AUTO_INCREMENT,
-  `nombre_compania_envios` varchar(256) DEFAULT NULL,
-  `telefono` varchar(64) DEFAULT NULL,
-  PRIMARY KEY (`id_compania_envios`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
+SET @@GLOBAL.GTID_PURGED='';
 
 --
--- Dumping data for table `dim_companiaEnvios`
+-- Dumping data for table `dim_cargo`
 --
 
-LOCK TABLES `dim_companiaEnvios` WRITE;
-/*!40000 ALTER TABLE `dim_companiaEnvios` DISABLE KEYS */;
-INSERT INTO `dim_companiaEnvios` VALUES (1,'Speedy Express','(503) 555-9831'),(2,'United Package','(503) 555-3199'),(3,'Federal Shipping','(503) 555-9931');
-/*!40000 ALTER TABLE `dim_companiaEnvios` ENABLE KEYS */;
+LOCK TABLES `dim_cargo` WRITE;
+/*!40000 ALTER TABLE `dim_cargo` DISABLE KEYS */;
+INSERT INTO `dim_cargo` VALUES (1,'Representante de ventas'),(2,'Vicepresidente comercial'),(3,'Gerente de ventas'),(4,'Coordinador ventas interno');
+/*!40000 ALTER TABLE `dim_cargo` ENABLE KEYS */;
 UNLOCK TABLES;
+SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -49,4 +43,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-10-31 22:01:19
+-- Dump completed on 2018-11-13 21:33:55

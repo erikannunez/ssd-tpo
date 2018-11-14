@@ -1,8 +1,8 @@
 -- MySQL dump 10.13  Distrib 5.7.17, for macos10.12 (x86_64)
 --
--- Host: localhost    Database: DataWarehouse
+-- Host: ssddb.ck6ywww2iqip.sa-east-1.rds.amazonaws.com    Database: DataWarehouse
 -- ------------------------------------------------------
--- Server version	8.0.13
+-- Server version	5.7.23-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -14,30 +14,25 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+SET @MYSQLDUMP_TEMP_LOG_BIN = @@SESSION.SQL_LOG_BIN;
+SET @@SESSION.SQL_LOG_BIN= 0;
 
 --
--- Table structure for table `dim_tratamientoEmpleado`
+-- GTID state at the beginning of the backup 
 --
 
-DROP TABLE IF EXISTS `dim_tratamientoEmpleado`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `dim_tratamientoEmpleado` (
-  `id_tratamiento` int(11) NOT NULL AUTO_INCREMENT,
-  `nombre_tratamiento` varchar(64) DEFAULT NULL,
-  PRIMARY KEY (`id_tratamiento`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
+SET @@GLOBAL.GTID_PURGED='';
 
 --
--- Dumping data for table `dim_tratamientoEmpleado`
+-- Dumping data for table `dim_trimestre`
 --
 
-LOCK TABLES `dim_tratamientoEmpleado` WRITE;
-/*!40000 ALTER TABLE `dim_tratamientoEmpleado` DISABLE KEYS */;
-INSERT INTO `dim_tratamientoEmpleado` VALUES (1,'Srta.'),(2,'Dr.'),(3,'Sra.'),(4,'Sr.');
-/*!40000 ALTER TABLE `dim_tratamientoEmpleado` ENABLE KEYS */;
+LOCK TABLES `dim_trimestre` WRITE;
+/*!40000 ALTER TABLE `dim_trimestre` DISABLE KEYS */;
+INSERT INTO `dim_trimestre` VALUES (1,1,1,'Primero'),(2,1,2,'Segundo'),(3,1,3,'Tercero'),(4,1,4,'Cuarto'),(5,2,1,'Primero'),(6,2,2,'Segundo'),(7,2,3,'Tercero'),(8,2,4,'Cuarto'),(9,3,1,'Primero'),(10,3,2,'Segundo'),(11,3,3,'Tercero'),(12,3,4,'Cuarto');
+/*!40000 ALTER TABLE `dim_trimestre` ENABLE KEYS */;
 UNLOCK TABLES;
+SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -48,4 +43,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-10-31 22:01:24
+-- Dump completed on 2018-11-13 21:33:58
